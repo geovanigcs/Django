@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"
+        integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+        integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"
+        integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Recipes</title>
     <style>
-         :root {
+        :root {
             --color-primary: #269fe6;
             --color-primary-hover: #2086c2;
             --color-primary-dark: #13141f;
@@ -50,30 +61,36 @@
 
             --spacing-gutter-medium: 3rem;
             --spacing-gutter-large: 4rem;
-         }
+        }
 
-        *{
-            margin: 0  ;
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'poppins' sans-serif;
         }
+
         html {
             font-size: 62.5%;
         }
+
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
-
+            background: var(--color-gray-1);
         }
+
         .box {
             max-width: 144rem;
             margin: 0 auto;
+            padding: var(--spacing-gutter-medium);
         }
-        
+
         .main_header_box {
             background: var(--color-primary-dark);
         }
-        .main-logo {
+
+        .main_logo {
             font-size: 4rem;
             color: var(--color-white);
             text-decoration: none;
@@ -81,6 +98,33 @@
             flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
         }
+
+        .main_logo_icon {
+            margin-right: 2rem;
+        }
+        
+        .search_form {
+           border: .2rem solid var(--color-primary-dark);
+           max-width: 64rem;
+           margin: 0 auto;
+           border-radius: .4rem;
+           position: relative;
+        }
+        .search_input, .search_button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+        .search_button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
     </style>
 </head>
