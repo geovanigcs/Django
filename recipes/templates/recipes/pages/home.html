@@ -2,12 +2,16 @@
 
 <body>
     {% include "recipes/partials/header.html" %}
-    <div class="search_box"></div>
-    <div class="box">
-        <form action="" class="search_form">
-            <input type="search" class="search_input" name="search">
-            <button type="submit" class="search_button"><i class="fas fa-search icon_search"></i></button>
-        </form>
-    </div>
+    {% include "recipes/partials/search.html" %}
+    {% include "recipes/static/recipes/css/recipes.css" %}
+    <main class="main_content_box">
+        <div class="main_content main_content_list box">
+            {%include "recipes/partials/recipe.html" %}
+            {%include "recipes/partials/recipe.html" %}
+            {%include "recipes/partials/recipe.html" %}
+        </div>
+    </main>
+    {% include "recipes/partials/footer.html" %}
 </body>
+
 </html>
