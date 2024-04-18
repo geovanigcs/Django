@@ -85,7 +85,8 @@
 
     .main_logo_icon {
         margin-right: 2rem;
-        font-size: 40px;
+        transform: scale(1.5);
+        margin-bottom: 3px;
     }
     
     .search_form {
@@ -145,11 +146,13 @@
         transform: scale(1);
         border-radius: .6rem;
         overflow: hidden;
+     
     }
     
     .recipe img {
         box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.20);
-        max-width: 100%;
+        max-width: 64rem;
+        min-width: 100%;
     }
 
     .recipe_list_item {
@@ -219,6 +222,16 @@
 
     .recipes_footer a:hover {
         filter:brightness(2)
+    }
+
+    .main_content_detail .recipe_list_item{
+        max-width: 84rem;
+        margin: 0 auto;
+    }
+
+    .main_content_detail .recipe_list_item:hover {
+        transform: scale(1);
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .main_footer {
