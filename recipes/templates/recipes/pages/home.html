@@ -4,8 +4,8 @@
 
 {% block content %}
 <div class="main_content main_content_list box">
+    {% for recipe in recipes %}
     {%include "recipes/partials/recipe.html" %}
-    {%include "recipes/partials/recipe.html" %}
-    {%include "recipes/partials/recipe.html" %}
+    {% endfor %}
 </div>
 {% endblock content %}

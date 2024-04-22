@@ -157,6 +157,7 @@
 
     .recipe_list_item {
         max-width: 64rem;
+        height: fit-content;
     }
 
     .recipe_list_item:hover {
@@ -234,6 +235,10 @@
         box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
     }
 
+    .preparation_steps {
+        padding: var(--spacing-gutter-medium);
+    }
+    
     .main_footer {
         display: flex;
         align-items: center;
